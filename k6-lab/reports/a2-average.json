@@ -1,0 +1,208 @@
+{
+    "metrics": {
+        "http_req_sending": {
+            "avg": 0.034970416666666664,
+            "min": 0,
+            "med": 0,
+            "max": 1.0457,
+            "p(90)": 0,
+            "p(95)": 0.24512499999999995
+        },
+        "http_req_receiving": {
+            "avg": 0.3500475000000002,
+            "min": 0,
+            "med": 0.25365000000000004,
+            "max": 1.0303,
+            "p(90)": 0.8725799999999999,
+            "p(95)": 0.9585
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 3
+        },
+        "http_req_blocked": {
+            "avg": 6.85844625,
+            "min": 0,
+            "med": 0,
+            "max": 565.4411,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "group_duration": {
+            "med": 270.13795000000005,
+            "max": 835.7864,
+            "p(90)": 352.90567999999996,
+            "p(95)": 365.522995,
+            "avg": 296.23449791666656,
+            "min": 268.1791
+        },
+        "http_req_duration": {
+            "avg": 289.2863233333333,
+            "min": 268.1006,
+            "med": 269.94,
+            "max": 375.4258,
+            "p(90)": 349.85364,
+            "p(95)": 361.073975
+        },
+        "http_req_connecting": {
+            "med": 0,
+            "max": 270.3698,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 3.3712895833333336,
+            "min": 0
+        },
+        "http_req_tls_handshaking": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 3.4628450000000006,
+            "min": 0,
+            "med": 0,
+            "max": 289.3181
+        },
+        "vus_max": {
+            "min": 3,
+            "max": 3,
+            "value": 3
+        },
+        "data_received": {
+            "rate": 2398.030167943272,
+            "count": 444711
+        },
+        "http_req_duration{group:::home}": {
+            "avg": 269.523605,
+            "min": 268.1006,
+            "med": 269.34865,
+            "max": 275.9001,
+            "p(90)": 270.11516,
+            "p(95)": 270.43901,
+            "thresholds": {
+                "p(95)<1000": false
+            }
+        },
+        "iterations": {
+            "count": 80,
+            "rate": 0.43138670605283375
+        },
+        "checks": {
+            "passes": 320,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "data_sent": {
+            "count": 57203,
+            "rate": 308.4576718292531
+        },
+        "iteration_duration": {
+            "p(95)": 7126.826354999999,
+            "avg": 5954.1289675,
+            "min": 4389.0926,
+            "med": 5930.063,
+            "max": 7605.7288,
+            "p(90)": 6919.36588
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(90)": 349.85364,
+            "p(95)": 361.073975,
+            "avg": 289.2863233333333,
+            "min": 268.1006,
+            "med": 269.94,
+            "max": 375.4258
+        },
+        "http_req_waiting": {
+            "avg": 288.9013054166668,
+            "min": 267.7989,
+            "med": 269.62095,
+            "max": 375.4258,
+            "p(90)": 349.72589,
+            "p(95)": 361.06967000000003
+        },
+        "http_req_duration{group:::recommendation}": {
+            "med": 337.6233,
+            "max": 375.4258,
+            "p(90)": 365.53178,
+            "p(95)": 370.06633,
+            "avg": 328.37876874999995,
+            "min": 275.4114,
+            "thresholds": {
+                "p(95)<1500": false
+            }
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 240,
+            "thresholds": {
+                "rate<0.01": false
+            },
+            "value": 0
+        },
+        "http_reqs": {
+            "count": 240,
+            "rate": 1.2941601181585012
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "home": {
+                "path": "::home",
+                "id": "f55eb66156c7d05104505c362878691e",
+                "groups": {},
+                "checks": {
+                        "home page is 200": {
+                            "passes": 80,
+                            "fails": 0,
+                            "name": "home page is 200",
+                            "path": "::home::home page is 200",
+                            "id": "ee57ca532d6d7881476bede61d609a2b"
+                        }
+                    },
+                "name": "home"
+            },
+            "quotes": {
+                "path": "::quotes",
+                "id": "9e2f47f8880f01e0d60415b2d2d07c7c",
+                "groups": {},
+                "checks": {
+                        "quotes are listed": {
+                            "path": "::quotes::quotes are listed",
+                            "id": "34d947b68c0dccdb4c56604b2d2e21cb",
+                            "passes": 80,
+                            "fails": 0,
+                            "name": "quotes are listed"
+                        }
+                    },
+                "name": "quotes"
+            },
+            "recommendation": {
+                "name": "recommendation",
+                "path": "::recommendation",
+                "id": "ae314d7b75d0a0f15cb558215c46c014",
+                "groups": {},
+                "checks": {
+                        "recommendation is 200": {
+                            "id": "5aba2ea8be78d79e5ba4f0ab59b413a7",
+                            "passes": 80,
+                            "fails": 0,
+                            "name": "recommendation is 200",
+                            "path": "::recommendation::recommendation is 200"
+                        },
+                        "pizza has a name": {
+                            "name": "pizza has a name",
+                            "path": "::recommendation::pizza has a name",
+                            "id": "9887ee630e67056eacbfce653e3f5490",
+                            "passes": 80,
+                            "fails": 0
+                        }
+                    }
+            }
+        },
+        "checks": {}
+    }
+}

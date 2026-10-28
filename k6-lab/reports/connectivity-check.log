@@ -1,0 +1,50 @@
+
+         /\      Grafana   /ÔÇ¥ÔÇ¥/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ÔÇ¥ÔÇ¥\ 
+  /          \   |   (  |  (ÔÇ¥)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: 01-first-test.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1 max VUs, 10m30s max duration (incl. graceful stop):
+              * default: 1 iterations for each of 1 VUs (maxDuration: 10m0s, gracefulStop: 30s)
+
+time="2026-10-28T22:42:54+07:00" level=warning msg="Request Failed" error="Get \"https://quickpizza.grafana.com/\": dial tcp 77.113.113.29:443: connectex: An attempt was made to access a socket in a way forbidden by its access permissions."
+
+running (00m01.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+default   [   0% ] 1 VUs  00m01.0s/10m0s  0/1 iters, 1 per VU
+
+
+  Ôûê TOTAL RESULTS 
+
+    checks_total.......: 1       0.975515/s
+    checks_succeeded...: 0.00%   0 out of 1
+    checks_failed......: 100.00% 1 out of 1
+
+    Ô£ù status is 200
+      Ôå│  0% ÔÇö Ô£ô 0 / Ô£ù 1
+
+    HTTP
+    http_req_duration....: avg=0s    min=0s    med=0s    max=0s    p(90)=0s    p(95)=0s   
+    http_req_failed......: 100.00% 1 out of 1
+    http_reqs............: 1       0.975515/s
+
+    EXECUTION
+    iteration_duration...: avg=1.02s min=1.02s med=1.02s max=1.02s p(90)=1.02s p(95)=1.02s
+    iterations...........: 1       0.975515/s
+    vus..................: 1       min=1      max=1
+    vus_max..............: 1       min=1      max=1
+
+    NETWORK
+    data_received........: 0 B     0 B/s
+    data_sent............: 0 B     0 B/s
+
+
+
+
+running (00m01.0s), 0/1 VUs, 1 complete and 0 interrupted iterations
+default Ô£ô [ 100% ] 1 VUs  00m01.0s/10m0s  1/1 iters, 1 per VU
